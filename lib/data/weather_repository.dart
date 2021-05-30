@@ -16,7 +16,7 @@ class FakeWeatherRepository implements WeatherRepository {
       () {
         final random = Random();
         final randomError = random.nextInt(10);
-        print("random error: ${randomError}");
+        print("random error: $randomError");
         // Simulate some network exception
         if (randomError <= 8 ? false : true) {
           throw NetworkException();
